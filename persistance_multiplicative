@@ -4,7 +4,7 @@ def lc(n)
 def nc(n)
     return len(lc(n))
 
-def pc(n)
+def pc(n):
     if nc(n)== 1: return n
     else:
         p=1
@@ -12,7 +12,7 @@ def pc(n)
             p=p*c
         return p
 
-def per(n)
+def per(n):
     cpt=0
     prd=n
     while nc(prd) !=1:
@@ -22,7 +22,7 @@ def per(n)
 
 pmax, nmax= 0,0
 for n in range (0,1000000):
-    if per(n)>pmax
+    if per(n)>pmax:
         pmax=per(n)
         nmax=n
 print(nmax,pmax)
